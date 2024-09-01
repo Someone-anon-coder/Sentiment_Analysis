@@ -75,6 +75,6 @@ def test_model(vectorizer_file: str, model_file: str) -> None:
 
 if __name__ == "__main__":
     vectorizer_file = 'Pkl_Files/tfidf_vectorizer.pkl'
-    model_file = 'Pkl_Files/naive_bayes_model.pkl'
+    model_file = 'Pkl_Files/best_naive_bayes_model.pkl'
 
     test_model(vectorizer_file, model_file)
