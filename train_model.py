@@ -43,7 +43,7 @@ def train_and_evaluate_model(X_train: pd.DataFrame, X_test: pd.DataFrame, y_trai
         None
     """
     
-    model = MultinomialNB()
+    model = MultinomialNB(alpha=1, fit_prior=False, force_alpha=False)
     model.fit(X_train, y_train)
     
     y_pred = model.predict(X_test)
